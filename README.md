@@ -1,2 +1,1 @@
-# 1stGit
-# 1stGit
+the readme for 1st commit
