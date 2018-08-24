@@ -1,12 +1,9 @@
-
-
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome!</title>
+		<title>Welcome!!!</title>
 		<link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -22,6 +19,7 @@
 
 	</head>
 	<body>
+		<!-- Hero -->
         <section class="hero has-background-primary">
             <div class="hero-body">
                 <div class="container is-widescreen">
@@ -30,12 +28,13 @@
             </div>
         </section>
 
-        <section class="section">
+        <!-- a brief self-introduction -->
+        <section class="section has-background-whilte">
 		    <div class="container">
 		    	<article class="media">
 				  	<figure class="media-left">
 				    	<p class="image is-256x256">
-				      		<img src="https://bulma.io/images/placeholders/256x256.png">
+				      		<img src="WechatIMG95.jpg">
 				    	</p>
 				  	</figure>
 				  	<div class="media-content">
@@ -44,57 +43,110 @@
 				        		<strong>Welcome to my personal website 😄</strong> 
 				        	</p>
 				        	<p class="is-size-5">
-				                Hey! I'm Yuting and nice to meet you!!
+				                Hey, nice to meet you!! I'm Yuting, a current sophomore at Carleton College. I'm a potential CS and Math double major, and Music Performance minor. As you may figure, the work for these majors and minor occupied most of my time unfortunately. However, I still love to make my limited leisure time colorful. During free time, I usually dance, hike, and talk with friends about life 😂.
 				      		</p>
 				    	</div>
 					</div>
-					  	<!-- <div class="media-right">
-    						<button class="delete"></button>
- 					 	</div> -->
 				</article>
 			</div>
 		</section>
 
-		 <!-- <section class="section">
-		    <div class="container">
-		      	<h1 class="title">Section</h1>
-		      	<h2 class="subtitle">
-		        	A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-		      	</h2>
-		    </div>
-		 </section> -->
-
+		<!-- more about me -->
 		<section class="section has-background-light">
-		    <div class="container">
-		      	<div class="columns">
-					 <div class="column">
-					 	<div class="notification is-info">
-					 		<h1 class="title">Basic Info</h1>
-					 		<p class="is-size-5">
-					    		<ul style="list-style-type:none">
-					    			<li class="fas fa-home">Taiyuan, China</li>
-					    		</ul>
-					    	</p>
+			<div class="container">
+			    <div class="tile is-ancestor">
+					<div class="tile is-4 is-vertical is-parent">
+
+					 	<!-- extracurricular: singing -->
+					    <div class="tile is-child box has-background-warning">
+					      	<p class="title">Singer</p>
+					      	<p>Singing means a lot to me, and it plays a significant role in my life. I have learned classical and music theatre for three years, and I'm a lyric soprano. Besides vocal training at school, I've also participated in a lot of singing related groups. Check out the links below!!</p>
+					      	<br>
+					      	<div class="buttons">
+					      		<a class="button is-primary is-focused" href="https://www.youtube.com/user/CarletonExit69">A cappella: Exit 69</a> 
+					      		<a class="button is-primary is-focused" href="https://www.youtube.com/watch?v=axpScXGJxqw&t=3160s">Band: Cold Rice Party</a> 
+					      		<a class="button is-primary is-focused" href="https://youtu.be/-n3eafgFcDU">Carleton College Choir</a> 
+					      		<a class="button is-primary is-focused" href="https://www.youtube.com/watch?v=E04-4Y5wfu0">Carleton Phoenix Project</a> 
+					    	</div> 		
 						</div>
-					 </div>
-					 <div class="column">
-					 	<div class="notification is-primary">
-					 		<h1 class="title">Second</h1>
-					 		<p class="is-size-5">
-					    		Second column
-					    	</p>
+
+						<!-- extracurricular: dance -->
+						<div class="tile is-child box has-background-danger">
+					      	<p class="title">Dancer</p>
+					      	<p class="has-text-white">I started to dance in my freshman year at Carleton when I joined KRUSH Dance Crew, which is a club that produces cool and fun dance cover videos. Although we're not professional dancers, we treated dance seriously as our interest.  Check out the link below!!</p>
+					      	<br>
+
+					      	<a class="button is-primary is-focused" href="https://www.youtube.com/channel/UCQVpTpReOJ7XZohUs-ScDiw">KRUSH Dance Crew</a> 
+					    </div>
+
+					</div>
+
+					<!-- projects -->
+					<div class="tile is-parent">
+					    <div class="tile is-child box has-background-dark">
+					      	<p class="title has-text-white">Programmer</p>
+					      	<p class="has-text-white">I enjoy exploring a lot, expecially as a programmer who always needs to learn something new. The link below is to my github page, and you can see all the projects I have done during my CS journey so far.</p>
+					      	<br>
+					      	<div class="buttons is-centered">
+					      		<a class="button is-primary is-focused" href="https://github.com/SUTINGYU">Here you go 😊</a> 
+					      	</div>
+					      	<!-- 1 -->
+					     	<p class="title is-5 has-text-white">Maze Solver</p>
+					     	<ul>
+					     		<li class="has-text-white">
+					     			#  Built a Java program that creates a maze based on the user input file and solves the maze.
+					     		</li>
+					     		<li class="has-text-white">
+									#  Implemented stack to solve the maze by depth-first search.
+								</li>	
+					     	</ul>
+					     	<br>
+					     	<!-- 2 -->
+					    	<p class="title is-5 has-text-white">"Fake" Interpreter</p>
+					     	<ul>
+					     		<li class="has-text-white">
+					     			#  Built a virtual machine (VM) simulator in Java to interpret input as a fake programming language.
+
+					     		</li>
+					     		<li class="has-text-white">
+									#  Checked for input syntax error by implementing a circular array deque.
+								</li>	
+					     	</ul>
+					     	<br>
+					     	<!-- 3 -->
+					     	<p class="title is-5 has-text-white">Zoo Displayer</p>
+					     	<ul>
+					     		<li class="has-text-white">
+					     			#  Designed a Java program that displays either text or images of animal.
+					     		</li>
+					     		<li class="has-text-white">
+									#  Implemented linked list to sort and store the animals from the user input file in alphabetical order by species.
+								</li>
+								<li class="has-text-white">
+					     			#  Wrote testing code for the sorted linked list implementation.
+					     		</li>
+					     	</ul>
+					     	<br>
+					     	<!-- 4 -->
+					    	<p class="title is-5 has-text-white">GPA Calculator</p>
+					     	<ul>
+					     		<li class="has-text-white is-medium">
+					     			#  Designed a Python program allowing users to design their own GPA calculating modules (i.e., homework, midterms) with corresponding percentages. Users could set an expected GPA value for the term, upon which the program would show the users how well they should perform in future assignments to achieve their goals.
+					     		</li>
+					     	</ul>
 						</div>
-					 </div>
-					 <div class="column">
-					 	<div class="notification is-warning ">
-					 		<h1 class="title">Third</h1>
-					 		<p class="is-size-5">
-					    		Third column
-					    	</p>
-						</div>
-					 </div>
+					</div>
 				</div>
-		    </div>
-  </section>
+			</div>
+  		</section>
+
+  		<!-- footer -->
+  		<footer class="footer has-background-primary">
+		  	<div class="content has-text-centered">
+		    	<p>
+		      		© 2018 Yuting Su. All Rights Reserved.
+		   		</p>
+		  	</div>
+		</footer>
 	</body>
 </html>
