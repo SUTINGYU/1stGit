@@ -1,0 +1,48 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.introCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.imageCon {
+    margin-right: 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.intro {
+    flex-grow: 1;
+    flex-shrink: 100;
+    flex-basis: 100%;
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.footer {
+    height: 30px;
+    padding: 1.5rem 1.5rem 3rem;
+    color: white;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+@media only screen and (max-width: 480px) {
+    .introCon {
+        flex-wrap: wrap;
+    }
+}
