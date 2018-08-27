@@ -5,54 +5,89 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Welcome!!!</title>
 		<link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
-        <style>
-.center {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-}        	
+		href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet"  href="assets/css/onepage.css">
+<!-- 		<script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script> -->
+		<!-- <script src="website.js"></script> -->
 
-        </style>
-
-	</head>
-	<body>
+	<!-- 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"> -->
+      <!--   <link rel="stylesheet" href="debug.css">
+ -->
+ 
 		<!-- Hero -->
-        <section class="hero has-background-primary">
-            <div class="hero-body">
-                <div class="container is-widescreen">
-                	<h1 class="font-family-Cantarell has-text-justified has-text-white title">Yuting Su</h1>
-                </div>
-            </div>
+
+
+        <section class="hero is-fullheight" id="home">
+        	<nav class="hero-head">
+				<div class="columns is-mobile is-marginless heading has-text-weight-bold">
+
+					<div class="column center desktop">
+						<a class="navbar-item has-text-grey-lighter" href="#home">HOME</a>
+						<a class="navbar-item has-text-grey-lighter" href="#about">ABOUT </a>
+						<a class="navbar-item has-text-grey-lighter" href="#projects">PROJECTS </a>
+						<a class="navbar-item has-text-grey-lighter" href="#extracurricular">EXTRACURRICULAR</a>
+						<a class="navbar-item has-text-grey-lighter" href="#contact">CONTACT</a>
+					</div>
+
+					<div class="column is-narrow right">
+						<figure class="navbar-item image">
+							<i class="fas fa-bars" style="width: 1rem; height: 1rem;"></i>
+						</figure>
+					</div>
+
+				</div>
+			</nav>
+
+			<header class="hero-body">
+				<div class="has-text-centered banner" >
+					<h1><strong class="has-text-grey-lighter is-size-1">I'm Yuting Su.</strong></h1>  
+					<br>          
+					<h3 class="has-text-white is-size-3">Welcome and nice to meet you! I'm a programmer, a singer, a dancer, and a hiker. Scrolldown to know more about me!</h3>
+				</div>
+
+			</header>
+
+			<div class="has-text-centered">
+			        <a href="#about" class="smoothscroll"><i class="icon fa fa-arrow-circle-down is-large"></i></a>
+			    </div>
+            
         </section>
 
         <!-- a brief self-introduction -->
-        <section class="section has-background-whilte">
-		    <div class="container">
-		    	<article class="media">
-				  	<figure class="media-left">
-				    	<p class="image is-256x256">
-				      		<img src="profile.jpg">
-				    	</p>
-				  	</figure>
-				  	<div class="media-content">
+        <section id="about">
+        	<div class="section is-fullheight">
+		    	<div class="introCon">
+					<div class="imageCon">
+						<img class="headshot" src="profile.jpg">
+					</div>
+				  	<div class="intro">
 				    	<div class="content">
 				      		<p class="is-size-3">
-				        		<strong>Welcome to my personal website 😄</strong> 
+				        		<strong>About Me</strong> 
 				        	</p>
-				        	<p class="is-size-5">
-				                Hey, nice to meet you!! I'm Yuting, a current sophomore at Carleton College. I'm a potential CS and Math double major, and Music Performance minor. As you may figure, the work for these majors and minor occupied most of my time unfortunately. However, I still love to make my limited leisure time colorful. During free time, I usually dance, hike, and talk with friends about life 😂.
+				        	<p class="is-size-5 has-text-grey-light">
+				               Born in China, I'm a current sophomore at Carleton College. I'm also a potential CS and Math double major, and Music Performance minor. As you may figure, the work for these majors and minor occupied most of my time unfortunately. However, I still love to do some projects on my own and talk about life with friends about life 😂.
 				      		</p>
+				      		<p class="is-size-3">
+				        		<strong>Contact Information</strong> 
+				        	</p>
+				        	<p class="is-size-5 has-text-grey-light">
+								   <span>Yuting Su</span><br>
+								   <span>300 N. College Street<br>
+								         Northfield, MN 55057 US
+		                     </span><br>
+								   <span>(612)227-5631</span><br>
+		                     <span>suy@carleton.edu</span>
+				        		
+				        	</p>
 				    	</div>
 					</div>
-				</article>
+				</div>
 			</div>
 		</section>
 
 		<!-- more about me -->
-		<section class="section has-background-light">
+		<section class="section has-background-light" id="projects">
 			<div class="container">
 			    <div class="tile is-ancestor">
 					<div class="tile is-4 is-vertical is-parent">
@@ -144,9 +179,19 @@
   		<footer class="footer has-background-primary">
 		  	<div class="content has-text-centered">
 		    	<p>
-		      		© 2018 Yuting Su. All Rights Reserved.
+		      		&copy; 2018 Yuting Su. All Rights Reserved.
 		   		</p>
 		  	</div>
 		</footer>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	   <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+	   <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+
+	   <script src="assets/js/jquery.flexslider.js"></script>
+	   <script src="assets/js/waypoints.js"></script>
+	   <script src="assets/js/jquery.fittext.js"></script>
+	   <script src="assets/js/magnific-popup.js"></script>
+	   <script src="assets/js/website.js"></script>
 	</body>
 </html>
