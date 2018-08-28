@@ -7,10 +7,7 @@
 		<link rel="stylesheet" 
 		href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<link rel="stylesheet"  href="assets/css/onepage.css">
-<!-- 		<script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script> -->
-		<!-- <script src="website.js"></script> -->
 
-	<!-- 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"> -->
       <!--   <link rel="stylesheet" href="debug.css">
  -->
  
@@ -18,25 +15,21 @@
 
 
         <section class="hero is-fullheight" id="home">
-        	<nav class="hero-head">
-				<div class="columns is-mobile is-marginless heading has-text-weight-bold">
-
-					<div class="column center desktop">
-						<a class="navbar-item has-text-grey-lighter smoothscroll" href="#home">HOME</a>
-						<a class="navbar-item has-text-grey-lighter smoothscroll" href="#about">ABOUT </a>
-						<a class="navbar-item has-text-grey-lighter smoothscroll" href="#projects">PROJECTS </a>
-						<a class="navbar-item has-text-grey-lighter smoothscroll" href="#extracurricular">EXTRACURRICULAR</a>
-						<a class="navbar-item has-text-grey-lighter smoothscroll" href="#contact">CONTACT</a>
+        	<div class="hero-head">
+   				<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+					<div class="navbar-menu center desktop" id="navMenu">
+							<a id="navMenu" class="navbar navbar-item has-text-grey-lighter smoothscroll is-active" href="#home">HOME</a>
+							<a id="navMenu" class="navbar navbar-item has-text-grey-lighter smoothscroll" href="#about">ABOUT </a>
+							<a id="navMenu" class="navbar navbar-item has-text-grey-lighter smoothscroll" href="#projects">PROJECTS </a>
+							<a id="navMenu" class="navbar navbar-item has-text-grey-lighter smoothscroll" href="#extracurricular">EXTRACURRICULAR</a>
+							<a id="navMenu" class="navbar navbar-item has-text-grey-lighter smoothscroll" href="#contact">CONTACT</a>
 					</div>
-
-					<div class="column is-narrow right">
-						<figure class="navbar-item image">
-							<i class="fas fa-bars" style="width: 1rem; height: 1rem;"></i>
-						</figure>
-					</div>
-
-				</div>
-			</nav>
+				
+			</div>
 
 			<header class="hero-body">
 				<div class="has-text-centered banner" >
@@ -68,7 +61,7 @@
 				        	<p class="is-size-5 has-text-grey-light">
 				               Born in China, I'm a current sophomore at Carleton College. I'm also a potential CS and Math double major, and Music Performance minor. As you may figure, the work for these majors and minor occupied most of my time unfortunately. However, I still love to do some projects on my own and talk about life with friends about life 😂.
 				      		</p>
-				      		<p class="is-size-3">
+				      		<p id="contact" class="is-size-3">
 				        		<strong>Contact Information</strong> 
 				        	</p>
 				        	<p class="is-size-5 has-text-grey-light">
@@ -87,7 +80,7 @@
 		</section>
 
 		<!-- more about me -->
-		<section class="section has-background-light" id="projects">
+		<section class="section has-background-white" id="projects">
 			
 						
 							 <div class="title has-text-centered">Projects</div>
@@ -95,6 +88,8 @@
 							 <br>
 
 							 <div class="columns">
+
+							 	<!-- 1 -->
 							 	<div class="column">
 								    <p class="title is-5 has-text-dark"> Maze Solver</p>
 								    <ul>
@@ -106,21 +101,8 @@
 									</li>	
 						     		</ul>
 					     		</div>
-					     	
-					     		<div class="column">
-						     		<p class="title is-5 has-text-dark">"Fake" Interpreter</p>
-						     		<ul>
-						     		<li class="has-text-dark">
-						     			#  Built a virtual machine (VM) simulator in Java to interpret input as a fake programming language.
 
-						     		</li>
-						     		<li class="has-text-dark">
-										#  Checked for input syntax error by implementing a circular array deque.
-									</li>	
-							     	</ul>
-						     	</div>
-
-						     	<!-- 3 -->
+							 	<!-- 2 -->
 						     	<div class="column">
 							     	<p class="title is-5 has-text-dark">Zoo Displayer</p>
 							     	<ul>
@@ -133,6 +115,22 @@
 										<li class="has-text-dark">
 							     			#  Wrote testing code for the sorted linked list implementation.
 							     		</li>
+							     	</ul>
+						     	</div>
+
+						     	
+					     	
+					     		<!-- 3 -->
+					     		<div class="column">
+						     		<p class="title is-5 has-text-dark">"Fake" Interpreter</p>
+						     		<ul>
+						     		<li class="has-text-dark">
+						     			#  Built a virtual machine (VM) simulator in Java to interpret input as a fake programming language.
+
+						     		</li>
+						     		<li class="has-text-dark">
+										#  Checked for input syntax error by implementing a circular array deque.
+									</li>	
 							     	</ul>
 						     	</div>
 
