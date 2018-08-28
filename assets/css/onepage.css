@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("../fonts.css");
 @import url("../fontello/css/fontello.css");
 @import url("../font-awesome/css/font-awesome.min.css");
@@ -58,6 +59,13 @@ header .banner {
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+=======
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+>>>>>>> 481cc96e4f0eea4ab53d2d540d754d9c32d1001a
 }
 
 .introCon {
