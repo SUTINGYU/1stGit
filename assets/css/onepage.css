@@ -23,9 +23,7 @@
     .desktop {
         display: none;
     }
-
 }
-
 
 .navbar{
   display:flex;
@@ -39,7 +37,7 @@
 @media (max-width:  768px) { .hero { background: black url(../../starrynightS.jpg) center / cover; } }
 
 #about {
-    background: #804A64;
+    background: #ffffff;
     align-items: center;
     display: flex;
     flex-grow: 1;
@@ -59,7 +57,6 @@ header .banner {
 /*.text { width: 100%; }*/
 .text {
    font: 5.5rem 'opensans-bold' /*sans-serif*/;
-   /*color: #fff*/;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
@@ -146,19 +143,15 @@ header .banner {
     transform: scale(0);
     -webkit-transition: transform .5s ease, opacity .7s ease;
     transition: transform .5s ease, opacity .7s ease;
-/*    font: 14px/21px 'opensans-bold', sans-serif;
-    color: #fff;*/
 }
 
 .footer {
     height: 30px;
     padding: 1.5rem 1.5rem 3rem;
     color: white;
-    /* display: flex;
-    justify-content: space-between; */
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .introCon {
         flex-wrap: wrap;
     }
