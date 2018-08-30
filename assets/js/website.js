@@ -26,3 +26,31 @@ $(document).ready(function() {
 
   });
 });
+
+// $("#showModal").click(function() {
+//   $(".modal").addClass("is-active");  
+// });
+
+// $(".modal-close").click(function() {
+//    $(".modal").removeClass("is-active");
+// });
+// import Typed from 'typed.js';
+
+// var options = {
+//   strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+//   typeSpeed: 40
+// }
+
+// var typed = new Typed(".element", options);
+
+$("#typed").typed({
+    strings: ["a programmer.", "a singer.", "a dancer.", "Yuting."],
+    typeSpeed: 50,
+    callback: function(){
+        lift();
+
+    }
+});
+function lift(){
+    $(".head-text").addClass("lift-text");
+}

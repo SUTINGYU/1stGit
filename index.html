@@ -7,6 +7,7 @@
 		<link rel="stylesheet" 
 		href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<link rel="stylesheet"  href="assets/css/onepage.css">
+		<link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
 
       <!--   <link rel="stylesheet" href="debug.css">
  -->
@@ -33,7 +34,9 @@
 
 			<header class="hero-body">
 				<div class="has-text-centered banner" >
-					<h1><strong class="has-text-grey-lighter is-size-1">I'm Yuting Su.</strong></h1>  
+
+					<h1 class="has-text-white is-size-3">I'm <span id="typed"></span></h1>
+					<!-- <h1><strong class="has-text-grey-lighter is-size-1">I'm Yuting Su.</strong></h1>   -->
 					<br>          
 					<h3 class="has-text-white is-size-3">Welcome and nice to meet you! I'm a programmer, a singer, a dancer, and a hiker. Scrolldown to know more about me!</h3>
 				</div>
@@ -168,11 +171,13 @@
 						<nav class="level">
 	         				<div class="level-item">
 								<div class="container-porto">
-										<a href="https://www.youtube.com/user/CarletonExit69">
-											<img src="img/exit.jpg" data-target="#modAccepella" class="headshot">
-												<div class="overlay" data-toggle="modal" data-target="#modAccepella"></div>
+										<!-- <a href="https://www.youtube.com/user/CarletonExit69"> -->
+										<!-- <a href="#modAccepella"> -->
+									
+											<img src="img/exit.jpg" data-target="modAccepella" class="headshot">
+												<div class="overlay"></div>
 			    								<span>A Cappella</span>
-			    						</a>
+			    						<!-- </a> -->
 								</div>
 							</div>
 						</nav>
@@ -222,7 +227,16 @@
 
 				</div>
 
-				<!-- <div class="modal" id="modAccepella modal">
+				<div id="modAccepella" class="modal modal-fx-fadeInScale">
+				  	<div class="modal-background"></div>
+				  	<div class="modal-content">
+				    <p>lalalalal</p>
+				  	</div>
+				  	<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+
+<!-- 				<div class="modal" id="modAccepella">
 					<div class="modal-background"></div>
 						<div class="modal-card">
 						    <header class="modal-card-head">
@@ -230,7 +244,7 @@
 							    <button class="delete" aria-label="close"></button>
 						    </header>
 						    <section class="modal-card-body">
-						     	<img src="exit.jpg" class="headshot">
+						     	<img src="img/exit.jpg" class="headshot">
 						    </section>
 						    <footer class="modal-card-foot">
 						       	<button class="button is-success">Save changes</button>
@@ -244,7 +258,7 @@
 		</section>
 		<hr>
 
-		<!-- extracurricular: singing -->
+		<!-- extracurricular: dancing -->
   		<section class="section has-background-white" id="dancing">
 			<div class="title has-text-centered">Dancing</div>
 				<br>
@@ -323,6 +337,8 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	   <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
 	   <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+	   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	   <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
 
 	   <script src="assets/js/jquery.flexslider.js"></script>
 	   <script src="assets/js/waypoints.js"></script>
